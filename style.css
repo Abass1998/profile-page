@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    max-height: 100vh;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%; 
+}
+.x{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    right: 6rem;
+    -webkit-transform: scaley(-1);
+     transform: scaley(-1);
+    /* top: 6rem; */
+    z-index: -1;
+    background-image: url( "images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+}
+.y{
+    /* border: 2px solid black; */
+    background-image: url("images/bg-pattern-bottom.svg");
+    height: 20vh;
+    width: 100%;
+    /* height: 50vh; */
+    position: relative;
+    left: 10rem;
+    /* bottom: 10rem; */
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.section{
+    /* border: 2px solid  hsl(227, 10%, 46%); */
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 30%;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.victor{
+    width: 100px;
+    /* border: 2px solid black; border: 2px solid white; */
+    border-radius: 50%;
+    position: relative;
+    bottom: 4rem;
+    height: 100px;
+}
+.vic-text{
+    position: relative;
+    bottom: 2rem;
+    line-height: 1.5;
+}
+.first-section{
+    border-radius: 15px 15px  0 0;
+    /* border: 2px solid white; */
+    width: 100%;
+    padding: 20%;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-section{
+    border: 2px solid white;
+    display: flex;
+    background-color: white;
+    /* position: relative;
+    bottom: 2rem; */
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third-section{
+    border: 2px solid whitesmoke;
+    display: flex;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    width: 100%; 
+    padding:  8% 0 8% 0;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.follower{
+    color:  hsl(227, 10%, 46%);
+}
+ span{
+     margin-right: 1rem;
+ } 
+
+ @media screen and (max-width:900px){
+    .section{
+        width: 70%;
+    }
+ }
